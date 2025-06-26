@@ -1,0 +1,397 @@
+body {
+      background: #181A1B;
+      color: #EEE;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .app {
+      max-width: 960px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    input, button {
+      padding: 10px;
+      margin-right: 10px;
+    }
+
+    .tiles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .tile {
+      width: 160px;
+      background: #222;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: fadeUp 0.3s ease forwards;
+      position: relative;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .tile:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+      z-index: 2;
+    }
+
+    .tile img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .tile .info {
+      padding: 10px;
+    }
+
+    .tile .info strong {
+      display: block;
+      color: #0F9D58;
+      margin-bottom: 6px;
+    }
+
+    .tile .tags {
+      font-size: 0.85em;
+      color: #aaa;
+    }
+
+    .tile button {
+      margin-top: 8px;
+      background: #0F9D58;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .tile button:hover {
+      background: #0c7c44;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .autocomplete-items {
+      position: absolute;
+      background: #222;
+      top: 40px;
+      left: 0;
+      right: 0;
+      border: 1px solid #0F9D58;
+      z-index: 99;
+      max-height: 200px;
+      overflow-y: auto;
+      border-radius: 0 0 6px 6px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .autocomplete-items li {
+      padding: 10px;
+      cursor: pointer;
+      border-bottom: 1px solid #333;
+    }
+
+    .autocomplete-items li:hover {
+      background: #0F9D58;
+      color: white;
+    }
+
+    body {
+      background: #181A1B;
+      color: #EEE;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .app {
+      max-width: 960px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    input, button {
+      padding: 10px;
+      margin-right: 10px;
+    }
+
+    .tiles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .tile {
+      width: 160px;
+      background: #222;
+      border-radius: 8px;
+      overflow: hidden;
+      animation: fadeUp 0.3s ease forwards;
+      position: relative;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .tile:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+      z-index: 2;
+    }
+
+    .tile img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .tile .info {
+      padding: 10px;
+    }
+
+    .tile .info strong {
+      display: block;
+      color: #0F9D58;
+      margin-bottom: 6px;
+    }
+
+    .tile .tags {
+      font-size: 0.85em;
+      color: #aaa;
+    }
+
+    .tile button {
+      margin-top: 8px;
+      background: #0F9D58;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .tile button:hover {
+      background: #0c7c44;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .autocomplete-items {
+      position: absolute;
+      background: #222;
+      top: 40px;
+      left: 0;
+      right: 0;
+      border: 1px solid #0F9D58;
+      z-index: 99;
+      max-height: 200px;
+      overflow-y: auto;
+      border-radius: 0 0 6px 6px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .autocomplete-items li {
+      padding: 10px;
+      cursor: pointer;
+      border-bottom: 1px solid #333;
+    }
+
+    .autocomplete-items li:hover {
+      background: #0F9D58;
+      color: white;
+    }
+
+    body { 
+      background: #181A1B; 
+      color: #EEE; 
+      font-family: 'Segoe UI', sans-serif; 
+      margin: 0; 
+      padding: 20px; 
+    }
+
+    .app { 
+      max-width: 960px; 
+      margin: auto; 
+      display: flex; 
+      flex-direction: column; 
+      gap: 30px; 
+    }
+    
+    input, button { 
+      padding: 10px; 
+      margin-right: 10px; 
+    }
+
+    .tiles { 
+      display: flex; 
+      flex-wrap: wrap;
+       gap: 16px; 
+      }
+
+    .tile { 
+      width: 160px; 
+      background: #222; 
+      border-radius: 8px; 
+      overflow: hidden; 
+      position: relative; 
+      animation: fadeUp 0.3s ease forwards; 
+      transition: transform 0.3s ease; 
+    }
+    
+    .tile:hover { 
+      transform: scale(1.08); 
+      z-index: 10; 
+    }
+
+    .tile img { 
+      width: 100%; 
+      height: 180px; 
+      object-fit: cover; 
+      transition: filter 0.4s ease; 
+    }
+
+    .tile:hover img { 
+      filter: brightness(0.5);
+     }
+
+    .tile .info { 
+      padding: 10px; 
+      transition: all 0.4s ease; 
+    }
+
+    .tile .info strong { 
+      display: block; 
+      color: #0F9D58; 
+      margin-bottom: 6px; 
+      transition: transform 0.3s ease, opacity 0.3s ease; 
+    }
+
+    .tile:hover .info strong { 
+      transform: translateY(-2px); 
+      opacity: 0.95; 
+    }
+
+    .tile .tags { 
+      font-size: 0.85em; 
+      color: #aaa; 
+    }
+    @keyframes fadeUp { 
+      from { 
+        opacity: 0; 
+        transform: translateY(20px); 
+      } 
+      to { 
+        opacity: 1; 
+        transform: translateY(0); 
+      } 
+    }
+
+    .autocomplete-items { 
+      position: absolute; 
+      background: #222; 
+      top: 40px; 
+      left: 0; 
+      right: 0; 
+      border: 1px solid #0F9D58; 
+      z-index: 99; 
+      max-height: 200px; 
+      overflow-y: auto; 
+      border-radius: 0 0 6px 6px; 
+      box-shadow: 0 4px 10px rgba(0,0,0,0.7); 
+      padding: 0; 
+      margin: 0; 
+      list-style: none; 
+    }
+
+    .autocomplete-items li { 
+      padding: 10px; 
+      cursor: pointer; 
+      border-bottom: 1px solid #333; 
+    }
+
+    .autocomplete-items li:hover { 
+      background: #0F9D58; 
+      color: white; 
+    }
+
+    .description { 
+      opacity: 0; 
+      transform: translateY(20px); 
+      transition: opacity 0.4s ease, transform 0.4s ease; 
+      position: absolute; 
+      bottom: 0; 
+      left: 0; 
+      width: 100%; 
+      background: rgba(0, 0, 0, 0.85); 
+      color: #fff; 
+      padding: 8px; 
+      font-size: 0.75rem; 
+      max-height: 80px; 
+      overflow-y: auto; 
+      border-radius: 0 0 8px 8px; 
+      pointer-events: none; 
+      scrollbar-width: thin; 
+    }
+
+    .description::-webkit-scrollbar { 
+      width: 6px; 
+    }
+
+    .description::-webkit-scrollbar-thumb { 
+      background: #0F9D58; 
+      border-radius: 3px; 
+    }
+
+    .tile:hover .description { 
+      opacity: 1; 
+      transform: translateY(0); 
+      pointer-events: auto; 
+    }
+
+    .fav-button { 
+      position: absolute; 
+      top: 8px; 
+      right: 8px; 
+      background: transparent !important; 
+      border: none; 
+      font-size: 1.5rem; 
+      color: #aaa; 
+      cursor: pointer; 
+      z-index: 10; 
+      transition: color 0.3s ease; 
+    }
+
+    .fav-button:hover { 
+      color: #0F9D58; 
+    }
+
+    .tile img {
+  z-index: 0;
+  position: relative;
+}
+
+.autocomplete-active {
+  background-color: #0F9D58 !important;
+  color: white;
+}
