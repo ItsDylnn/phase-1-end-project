@@ -35,35 +35,38 @@ A web app that recommends games based on your favorites using the RAWG Video Gam
 
 ### 1. Fork the repo
 
-### 2. Copy the ssh 
+### 2. Copy the ssh code
 
 ### 3. Clone the repo
 
 ```bash
-git clone https://github.com/yourusername/games-domain.git
-cd games-domain
+git clone git@github.com:yourusername/phase-1-end-project
 ```
 
-#### 4. Install dependencies
+### 4. Navigate to the directory
+```bash
+cd phase-1-end-project
+```
+
+### 5. Open directory in VS Code
+```bash
+code .
+```
+
+### 6. Navigate to the backend directory
 
 ```bash
-npm install
+cd backend
 ```
 
-### 5. Set up environment variables
-Create a .env file in the root directory and add the RAWG API key:
-```bash
-RAWG_API_KEY=your_rawg_api_key_here
-```
-
-### 6. Start the server
+### 7. Start the server
 ```bash
 node server.js
 ```
 By default, the backend runs on http://localhost:5000.
 
-### 7. Open the frontend
-Simply open index.html in your browser or use a local server.
+### 8. Open the frontend
+Simply open index.html in your browser.
 
 ---
 
